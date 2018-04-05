@@ -1,0 +1,70 @@
+adoption:
+    path:     /adoption
+    defaults: { _controller: AnnonceBundle:Annonce:adoption }
+accouplement:
+    path:     /accouplement
+    defaults: { _controller: AnnonceBundle:Annonce:accouplement }
+vente:
+    path:     /vente
+    defaults: { _controller: AnnonceBundle:Annonce:vente }
+demander:
+    path:     /demander/{idUser}/{idAnnonce}
+    defaults: { _controller: AnnonceBundle:Annonce:demander}
+FormulaireAnnonce:
+    path:     /FormulaireAnnonce/{id}
+    defaults: { _controller: AnnonceBundle:Annonce:ajout}
+FormulaireAnimal:
+    path:     /FormulaireAnimal
+    defaults: { _controller: AnnonceBundle:Animal:ajout}
+affichage:
+    path:     /affichage
+    defaults: { _controller: AnnonceBundle:Animal:affichage }
+supprimerAnimal:
+    path:     /supprimerAnimal/{id}
+    defaults: { _controller: AnnonceBundle:Animal:delete }
+MesAnnonces:
+    path:     /MesAnnonces
+    defaults: { _controller: AnnonceBundle:Annonce:affichage }
+supprimerAnnonce:
+    path:     /supprimerAnnonce/{id}
+    defaults: { _controller: AnnonceBundle:Annonce:delete }
+modifierAnnonce:
+    path:     /modifierAnnonce/{id}
+    defaults: { _controller: AnnonceBundle:Annonce:modifier }
+supprimerAnnonceBack:
+    path:     /supprimerAnnonceBack/{id}
+    defaults: { _controller: AnnonceBundle:Annonce:deleteBack }
+traiterDemande:
+    path:     /traiterDemande
+    defaults: { _controller: AnnonceBundle:Demande:affichage }
+rechercherAnnonce:
+    path:     /rechercherAnnonce
+    defaults: { _controller: AnnonceBundle:Annonce:rechercher }
+rechercherAnnonceBack:
+    path:     /rechercherAnnonceBack
+    defaults: { _controller: AnnonceBundle:Annonce:rechercherBack }
+my_app_mail_homepage:
+    path: /Mail
+    defaults: { _controller: AnnonceBundle:Mail:index }
+my_app_mail_accuse:
+    path: /success
+    defaults: { _controller: AnnonceBundle:Mail:success }
+email:
+    path:     /email/{id}
+    defaults: { _controller: AnnonceBundle:Mail:index }
+trier:
+    path:     /trier
+    defaults: { _controller: AnnonceBundle:Annonce:trier }
+trierAC:
+    path:     /trierAC
+    defaults: { _controller: AnnonceBundle:Annonce:trierAC }
+trierV:
+    path:     /trierV
+    defaults: { _controller: AnnonceBundle:Annonce:trierV }
+
+emailR:
+    path:     /emailR/{id}
+    defaults: { _controller: AnnonceBundle:Mail:refus }
+annonceBack:
+    path:     /annonceBack
+    defaults: { _controller: AnnonceBundle:Annonce:back }

@@ -1,0 +1,4 @@
+services:
+    redirect.after.login:
+        class: UserBundle\Entity\AfterLoginRedirection
+        arguments: ["@router"]

@@ -1,0 +1,19 @@
+user_homepage:
+    path:     /index
+    defaults: { _controller: UserBundle:Default:index }
+lay:
+    path:     /la
+    defaults: { _controller: UserBundle:Default:layout }
+
+admin:
+    path:     /admin
+    defaults: { _controller: UserBundle:Default:aadmin }
+
+acceuil_user:
+    path:     /
+    defaults: { _controller: UserBundle:Default:zz }
+
+acceuil_veterinaire:
+    path:     /veterinaire
+    defaults: { _controller: UserBundle:Default:veterinaire}
+
