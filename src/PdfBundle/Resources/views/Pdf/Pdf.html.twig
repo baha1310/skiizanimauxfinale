@@ -1,0 +1,27 @@
+
+
+
+    <div>
+
+            <h1>Annonce</h1> <h2 > <br> </h2>
+            <br>
+       <center> <h1 style="color: red;border-color: #1A531B">Cher utilisateur {{ app.user.username() }}</h1></center><br>
+    <table border="1" style="width: 1000px">
+        <tr style="color: #1A531B"><td><h2><center>titre annonce</center></h2></td>
+            <td><h2><center>description</center></h2></td>
+            <td><h2><center>date Annonce</center></h2></td>
+            <td><h2><center>Type</center></h2></td>
+            <td><h2><center>Animal</center></h2></td>
+        </tr>
+        {% for i in annonce %}<tr>
+            <td>{{ i.titreAnnonce }}</td>
+            <td>{{ i.descriptionAnnonce }}</td>
+<td>{{ i.dateAnnonce|date }}</td>
+            <td>{{ i.typeAnnonce }}</td>
+            <td>{{ i.idAnimal.nom }}</td></tr>
+        {% endfor %}
+    </table>
+    </div>
+    <br>
+    <div>
+</div>

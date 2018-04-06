@@ -5,6 +5,9 @@ annonce:
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /
+pdf:
+    resource: "@PdfBundle/Resources/config/routing.yml"
+    prefix:   /pdf
 
 app:
     resource: '@AppBundle/Controller/'

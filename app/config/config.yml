@@ -66,11 +66,8 @@ doctrine:
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"
-    host:      "%mailer_host%"
     username:  "%mailer_user%"
     password:  "%mailer_password%"
-    encryption: tls
-    port: 465
     spool:     { type: memory }
     logging: true
 
@@ -83,3 +80,15 @@ fos_user:
         address: yourmail@yourdomain.com
         sender_name: demo
 
+knp_snappy:
+    pdf:
+        enabled:    true
+        binary:    "C:/wamp64/www/skiizanimauxfinale/vendor/wkhtmltopdf/bin/wkhtmltopdf.exe"
+        options:    []
+    image:
+        enabled:    true
+        binary:     "C:/wamp64/www/skiizanimauxfinale/vendor/wkhtmltopdf/bin/wkhtmltoimage.exe"
+        options:
+            no-outline: true
+            page-size: LETTER
+            encoding: UTF-8
